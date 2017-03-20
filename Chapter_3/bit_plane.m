@@ -1,5 +1,13 @@
 function bit_plane(file_name)
 
+%
+% This function shows bit plane images which consists each 8 bit.
+%
+% Author : Yoonjae, Cho
+% Email  : yoonjae.cho92@gmail.com
+% Github : https://github.com/yoon-jae
+%
+
 figure;
 c = imread(file_name);
 cd = double(c);
@@ -15,35 +23,35 @@ c7 = mod(floor(cd/128), 2); % MSB Plane
 
 subplot(3,3,1);
 imshow(c0);
-title('1th Bit plane images(LSB)');
+title('1th Bit plane image(LSB)');
 
 subplot(3,3,2);
 imshow(c1);
-title('2th Bit plane images');
+title('2th Bit plane image');
 
 subplot(3,3,3);
 imshow(c2);
-title('3th Bit plane images');
+title('3th Bit plane image');
 
 subplot(3,3,4);
 imshow(c3);
-title('4th Bit plane images');
+title('4th Bit plane image');
 
 subplot(3,3,5);
 imshow(c4);
-title('5th Bit plane images');
+title('5th Bit plane image');
 
 subplot(3,3,6);
 imshow(c5);
-title('6th Bit plane images');
+title('6th Bit plane image');
 
 subplot(3,3,7);
 imshow(c6);
-title('7th Bit plane images');
+title('7th Bit plane image');
 
 subplot(3,3,8);
 imshow(c7);
-title('8th Bit plane images(MSB)');
+title('8th Bit plane image(MSB)');
 
 % Reconstructing original image.
 cc = 2 * c7 + c6;
@@ -57,4 +65,4 @@ cc = uint8(cc);
 
 subplot(3,3,9);
 imshow(cc);
-title('Reconstructed original images');
+title('Reconstructed original image');
