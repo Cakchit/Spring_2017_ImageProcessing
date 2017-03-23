@@ -15,7 +15,7 @@
 4. 4-gray dithering function
 5. Error diffusion function(using Floyd-Steinberg algorithm)
 
-#### [Chapter4](https://github.com/Yoon-jae/Spring_2017_DataScience/tree/master/Week3)
+#### [Chapter4](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter4)
 ##### Pixel wise operation
 1. Probablity distribution function
 2. Cumulative distribution function
