@@ -20,13 +20,10 @@ end
 
 p = p / (256 * 256);
 c = zeros(256);
+c(1) = p(1);
 
-for i = 1:256
-    if i == 1
-        c(i) = p(i);
-    else
-        c(i) = c(i-1) + p(i);
-    end
+for i = 2:256
+    c(i) = c(i-1) + p(i);
 end
 
 plot(0:255, c);
