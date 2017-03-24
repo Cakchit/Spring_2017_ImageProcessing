@@ -17,6 +17,6 @@ for i = 1:h
         p(x(i,j)) = p(x(i,j)) + 1;
     end
 end
-
+p = p / (256 * 256);
 figure, plot(0:255, p);
 result = p;
