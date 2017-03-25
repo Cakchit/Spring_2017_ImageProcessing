@@ -1,4 +1,4 @@
-function result = D2_2gray_dither(file_name)
+function result = D2_2gray_dither(x)
 
 %
 % This function returns 2gray quantized matrix with dither matrix(D2).
@@ -8,7 +8,6 @@ function result = D2_2gray_dither(file_name)
 % Github : https://github.com/yoon-jae
 %
 
-x = imread(file_name);
 [h, w] = size(x);
 
 D2 = [0 128 32 160;
@@ -19,5 +18,5 @@ r = repmat(D2, h/4, w/4);
 
 x2 = (x > r) * 255;
 
-figure, imshow(x2);
+%figure, imshow(x2);
 result = x2;

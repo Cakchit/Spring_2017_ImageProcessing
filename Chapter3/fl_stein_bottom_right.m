@@ -1,4 +1,4 @@
-function result = fl_stein_bottom_right(file_name)
+function result = fl_stein_bottom_right(x)
 
 %
 % This function returns quantized matrix with error diffusion algorithm.
@@ -9,7 +9,6 @@ function result = fl_stein_bottom_right(file_name)
 % Github : https://github.com/yoon-jae
 %
 
-x = imread(file_name);
 [h, w] = size(x);
 y = uint8(zeros(h, w));
 z = zeros(h+2 ,w+2);
@@ -33,5 +32,5 @@ for i = h+1:-1:2
 end
 
 y = y(2:h+1, 2:w+1); % Remove padding.
-figure, imshow(y);
+%figure, imshow(y);
 result = y;

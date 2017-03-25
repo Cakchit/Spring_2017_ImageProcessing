@@ -1,4 +1,4 @@
-function result = D_4gray_dither(file_name)
+function result = D_4gray_dither(x)
 
 %
 % This function returns 4gray quantized matrix with dither matrix(D).
@@ -8,7 +8,6 @@ function result = D_4gray_dither(file_name)
 % Github : https://github.com/yoon-jae
 %
 
-x = imread(file_name);
 [h, w] = size(x);
 
 D = [0 56;
@@ -21,5 +20,5 @@ q = floor(x/85);
 x4 = q + ((x - 85*q) > r);
 x4 = uint8(x4 * 85);
 
-figure, imshow(x4);
+%figure, imshow(x4);
 result = x4;

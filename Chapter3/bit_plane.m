@@ -1,4 +1,4 @@
-function bit_plane(file_name)
+function bit_plane(c)
 
 %
 % This function shows bit plane images which consists each 8 bit.
@@ -9,7 +9,6 @@ function bit_plane(file_name)
 %
 
 figure;
-c = imread(file_name);
 cd = double(c);
 
 c0 = mod(cd, 2);            % LSB Plane

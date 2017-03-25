@@ -1,4 +1,4 @@
-function result = imresize_boxfilter(file_name, div_y, div_x)
+function result = imresize_boxfilter(x, div_y, div_x)
 
 %
 % This function returns reduced spatial resolution images.
@@ -9,15 +9,16 @@ function result = imresize_boxfilter(file_name, div_y, div_x)
 % Github : https://github.com/yoon-jae
 %
 
-[h,w] = size(file_name);
+[h,w] = size(x);
 result = zeros(h,w);
 
 for i = div_y:div_y:h
     for j = div_x:div_x:w
         q_i = i / div_y;
         q_j = j / div_x;
-        result((q_i - 1) * div_y+1 : i,(q_j - 1) * div_x + 1 : j) = file_name(i,j);
+        result((q_i - 1) * div_y+1 : i,(q_j - 1) * div_x + 1 : j) = x(i,j);
     end
 end
 
-result = uint8(result)
+%result = uint8(result);
+imshow(result);
