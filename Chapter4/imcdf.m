@@ -1,4 +1,4 @@
-function result = imcdf(file_name)
+function result = imcdf(x)
 
 %
 % This function returns cumulative distribution of image.
@@ -8,17 +8,18 @@ function result = imcdf(file_name)
 % Github : https://github.com/yoon-jae
 %
 
-x = imread(file_name);
-[h, w] = size(x);
-p = zeros(256);
+p = impdf(x);
+% [h, w] = size(x);
+% p = zeros(256);
+% 
+% for i = 1:h
+%     for j = 1:w
+%         p(x(i,j)) = p(x(i,j)) + 1;
+%     end
+% end
+% 
+% p = p / (h * w);
 
-for i = 1:h
-    for j = 1:w
-        p(x(i,j)) = p(x(i,j)) + 1;
-    end
-end
-
-p = p / (256 * 256);
 c = zeros(256);
 c(1) = p(1);
 
