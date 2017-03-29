@@ -18,5 +18,6 @@ for i = 1:h
 end
 
 p = p / (h * w);
-figure, plot(0:255, p);
+%figure, plot(0:255, p);
+%title("Original image's pdf");
 result = p;
