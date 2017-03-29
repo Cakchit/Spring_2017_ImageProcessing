@@ -1,4 +1,4 @@
-# [Spring, 2016] CNU Image Processing Class
+# [Spring, 2017] CNU Image Processing Class
 
 ### Development tools : Matlab
 
