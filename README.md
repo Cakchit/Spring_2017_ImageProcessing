@@ -13,9 +13,13 @@
 2. Bit plane function
 3. 2-gray dithering function
 4. 4-gray dithering function
+5. 8-gray dithering function
+6. Dithering single intensity function
 5. Error diffusion function(using Floyd-Steinberg algorithm)
 
 #### [Chapter4](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter4)
 ##### Pixel wise operation
-1. Probablity distribution function
-2. Cumulative distribution function
+1. Image histogram function
+2. Probablity distribution function
+3. Cumulative distribution function
+4. Equalizing image histogram function
