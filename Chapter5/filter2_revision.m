@@ -10,7 +10,6 @@ function result = filter2_revision(square_filter_size, input, opt)
 % Github : https://github.com/yoon-jae
 %
  
-f = ones(square_filter_size) / (square_filter_size^2);
 pad = floor(square_filter_size / 2);
 [h, w] = size(input);
 
@@ -23,6 +22,7 @@ if strcmp(opt, 'mirror')
     I = [input(pad:-1:1, :); input; input(end:-1:end-(pad-1), :)];
     I = [I(:, pad:-1:1), I, I(:, end:-1:end-(pad-1))];
 end
+
 
 result = zeros(h + 2*pad, w+2*pad);
  

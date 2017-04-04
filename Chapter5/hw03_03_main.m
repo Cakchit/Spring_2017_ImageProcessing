@@ -17,37 +17,22 @@ im = [20 20 20 10 10 10 10 10 10;
       10 10 10 10 10 10 10 10 10;
       20 10 20 20 10 10 10 20 20;
       20 10 10 20 10 10 20 10 20];
-  
-a = [-1 -1 0;
-     -1 0 1;
-     0 1 1];
  
-c = [-1 -1 -1;
-     2 2 2;
-     -1 -1 -1];
+b = [0 -1 -1; 1 0 -1; 1 1 0];    
+d = [-1 2 -1; -1 2 -1; -1 2 -1]; 
+e = [-1 -1 -1; -1 8 -1; -1 -1 -1];
+g = [-1 0 1; -1 0 1; -1 0 1];
  
-f = [1 1 1;
-     1 1 1;
-     1 1 1];
- 
-h = [0 -1 0;
-     -1 4 -1;
-     0 -1 0];
- 
-b = [];
-d = [];
-e = [];
-g = [];
- 
-out2_1 = filter3_revision(im, a);
-out2_2 = filter3_revision(im, c);
-out2_3 = filter3_revision(im, f);
-out2_4 = filter3_revision(im, h);
+out2_1 = filter3_revision(im, b);
+out2_2 = filter3_revision(im, d);
+out2_3 = filter3_revision(im, e);
+out2_4 = filter3_revision(im, g);
 
 figure;
-subplot(2,3,1), imshow(uint8(out2_1)), title('Image filtered with a');
-subplot(2,3,2), imshow(uint8(out2_2)); title('Image filtered with c');
-subplot(2,3,3), imshow(uint8(out2_3)); title('Image filtered with f');
-subplot(2,3,4), imshow(uint8(out2_4)); title('Image filtered with h');
-subplot(2,3,5), imshow(uint8(im)); title('Original image');
+subplot(2,4,1), imshow(uint8(im)); title('Original image');
+subplot(2,4,5), imshow(uint8(out2_1)), title('Image filtered with b');
+subplot(2,4,6), imshow(uint8(out2_2)); title('Image filtered with d');
+subplot(2,4,7), imshow(uint8(out2_3)); title('Image filtered with e');
+subplot(2,4,8), imshow(uint8(out2_4)); title('Image filtered with g');
+
 

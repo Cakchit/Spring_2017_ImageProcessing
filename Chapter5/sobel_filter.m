@@ -37,3 +37,4 @@ for i = 2:h+1
 end
 
 result = result(2:h+1, 2:w+1);
+

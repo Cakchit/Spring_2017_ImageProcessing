@@ -12,4 +12,6 @@ in_1 = imread('cameraman.tif');
 
 out_1 = sobel_filter(in_1);
 
-figure, imshow(uint8(out_1)), title('3x3 sobel filter');
+figure;
+subplot(1,2,1), imshow(in_1), title('original image');
+subplot(1,2,2), imshow(uint8(out_1)), title('3x3 sobel filter');
