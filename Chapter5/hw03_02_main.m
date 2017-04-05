@@ -1,23 +1,38 @@
 function hw03_02_main
 
 %
-% This function returns homework03_02 : Image with uniform mean filter.
+% This function returns homework03_02 : Image with zero padding filter.
 %
 % Author : Yoonjae, Cho
 % Email  : yoonjae.cho92@gmail.com
 % Github : https://github.com/yoon-jae
 %
 
-im = imread('cameraman.tif');
-
-out1_1 = filter2_revision(3, im, 'zero');
-out1_2 = filter2_revision(5, im, 'zero');
-
-out1_3 = filter2_revision(3, im, 'mirror');
-out1_4 = filter2_revision(5, im, 'mirror');
+im = [20 20 20 10 10 10 10 10 10;
+      20 20 20 20 20 20 20 20 10;
+      20 20 20 10 10 10 10 20 10;
+      20 20 10 10 10 10 10 20 10;
+      20 10 10 10 10 10 10 20 10;
+      10 10 10 10 20 10 10 20 10;
+      10 10 10 10 10 10 10 10 10;
+      20 10 20 20 10 10 10 20 20;
+      20 10 10 20 10 10 20 10 20];
+ 
+b = [0 -1 -1; 1 0 -1; 1 1 0];    
+d = [-1 2 -1; -1 2 -1; -1 2 -1]; 
+e = [-1 -1 -1; -1 8 -1; -1 -1 -1];
+g = [-1 0 1; -1 0 1; -1 0 1];
+ 
+out2_1 = filter3_revision(im, b);
+out2_2 = filter3_revision(im, d);
+out2_3 = filter3_revision(im, e);
+out2_4 = filter3_revision(im, g);
 
 figure;
-subplot(2,2,1), imshow(uint8(out1_1)), title('3x3 zero uniform filter');
-subplot(2,2,2), imshow(uint8(out1_2)); title('5x5 zero uniform filter');
-subplot(2,2,3), imshow(uint8(out1_3)); title('3x3 mirror uniform filter');
-subplot(2,2,4), imshow(uint8(out1_4)); title('5x5 mirror uniform filter');
+subplot(2,4,1), imshow(uint8(im)); title('Original image');
+subplot(2,4,5), imshow(uint8(out2_1)), title('Image filtered with b');
+subplot(2,4,6), imshow(uint8(out2_2)); title('Image filtered with d');
+subplot(2,4,7), imshow(uint8(out2_3)); title('Image filtered with e');
+subplot(2,4,8), imshow(uint8(out2_4)); title('Image filtered with g');
+
+

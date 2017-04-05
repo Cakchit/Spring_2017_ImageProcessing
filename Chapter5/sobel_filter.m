@@ -25,16 +25,23 @@ result = zeros(h+2, w+2);
 for i = 2:h+1
     for j = 2:w+1
         v = I(i-1:i+1, j-1:j+1) .* v_f;
-        result(i,j) = sum(sum(v));
+        result(i,j) = abs(sum(sum(v)));
     end
 end
 
 for i = 2:h+1
     for j = 2:w+1
         v = I(i-1:i+1, j-1:j+1) .* h_f;
-        result(i,j) = result(i,j) + sum(sum(v));
+        result(i,j) = result(i,j) + abs(sum(sum(v)));
     end
 end
+
+max_intensity = max(max(result));
+min_intensity = min(min(result));
+
+scale = max_intensity - min_intensity;
+
+result = (result - min_intensity) / scale * 255;
 
 result = result(2:h+1, 2:w+1);
 
