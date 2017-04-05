@@ -23,3 +23,11 @@
 2. Probablity distribution function
 3. Cumulative distribution function
 4. Equalizing image histogram function
+
+
+#### [Chapter5](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter5)
+##### Region wise operation
+1. Uniform filter function
+2. Gaussian filter function
+3. Sobel filter function
+4. Zero padding, Mirror padding function
