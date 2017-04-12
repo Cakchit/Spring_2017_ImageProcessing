@@ -31,3 +31,8 @@
 2. Gaussian filter function
 3. Sobel filter function
 4. Zero padding, Mirror padding function
+5. Separable Gaussian filter function
+6. Laplacian filter function
+7. LoG filter function
+8. High-boost filter function
+9. Unshap-masking filter function
