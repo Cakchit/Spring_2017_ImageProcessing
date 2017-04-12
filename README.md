@@ -35,4 +35,4 @@
 6. Laplacian filter function
 7. LoG filter function
 8. High-boost filter function
-9. Unshap-masking filter function
+9. Unsharp-masking filter function
