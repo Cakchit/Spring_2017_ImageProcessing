@@ -43,5 +43,5 @@ scale = max_intensity - min_intensity;
 
 result = (result - min_intensity) / scale * 255;
 
-result = result(2:h+1, 2:w+1);
+result = uint8(result(2:h+1, 2:w+1));
 

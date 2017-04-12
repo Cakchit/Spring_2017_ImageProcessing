@@ -10,28 +10,28 @@ function result = Gaussian_filter(input)
 
 [h, w] = size(input);
 
-sig = 4;
-f = zeros(3,3);
-weight = 0;
+sig = 2;
+f = zeros(5,5);
 
-for i = -1:1
-    for j = -1:1
-        f(i+2,j+2) = exp(-((i^2 + j^2)) / (2 * sig^2));
-        weight = weight + f(i+2,j+2);
+for i = -2:2
+    for j = -2:2
+        f(i+3,j+3) = exp(-((i^2 + j^2)) / (2 * sig^2));
     end
 end
 
-f = f / weight;
+f = f / sum(f(:));
 
-I = zeros(h+2, w+2);
-I(2:h+1, 2:w+1) = input;
-result = zeros(h+2, w+2);
+I = zeros(h+4, w+4);
+I(3:h+2, 3:w+2) = input;
+result = zeros(h+4, w+4);
 
-for i = 2:h+1
-    for j = 2:w+1
-        v = I(i-1:i+1, j-1:j+1) .* f;
-        result(i,j) = sum(sum(v));
+
+for i = 3:h+2
+    for j = 3:w+2
+        v = I(i-2:i+2, j-2:j+2) .* f;
+        result(i,j) = sum(v(:));
     end
 end
 
-result = result(2:h+1, 2:w+1);
+
+result = uint8(result(3:h+2, 3:w+2));
