@@ -36,3 +36,9 @@
 7. LoG filter function
 8. High-boost filter function
 9. Unsharp-masking filter function
+
+
+#### [Chapter6](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter6)
+##### Geometric transform
+1. Up sampling image function(using nearest, bilinear, bicubic interpolation)
+2. Rotating image function(using nearest, bilinear, bicubic interpolation)
