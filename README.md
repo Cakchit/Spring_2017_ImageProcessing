@@ -42,3 +42,11 @@
 ##### Geometric transform
 1. Up sampling image function(using nearest, bilinear, bicubic interpolation)
 2. Rotating image function(using nearest, bilinear, bicubic interpolation)
+
+#### [Chapter7](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter7)
+##### Fourier transform
+1. 1D DFT
+2. 2D Separable DFT
+3. Shifting DFT
+4. Showing DFT(log, abs)
+5. Butterworth LPF, HPF
