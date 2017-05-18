@@ -50,3 +50,8 @@
 3. Shifting DFT
 4. Showing DFT(log, abs)
 5. Butterworth LPF, HPF
+
+#### [Chapter8](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter8)
+##### Image restoration
+1. Median filter(using quick selection algorithm for get median)
+2. Wiener filter(adaptive filter)
