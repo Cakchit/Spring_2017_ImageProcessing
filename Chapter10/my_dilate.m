@@ -57,4 +57,4 @@ function result = my_dilate(im, se)
             end
         end
     end
-    
+end  
