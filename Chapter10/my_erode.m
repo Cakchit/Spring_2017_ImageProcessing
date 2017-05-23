@@ -1,7 +1,7 @@
 function result = my_erode(im, se)
 
     %
-    % This function returns erodation binary images with structure element.
+    % This function returns erosion binary images with structure element.
     % se(structure element) size is 3x3.
     %
     % Author : Yoonjae, Cho
@@ -64,3 +64,4 @@ function result = my_erode(im, se)
             end
         end
     end
+end
