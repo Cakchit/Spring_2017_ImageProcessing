@@ -57,6 +57,13 @@
 2. Wiener filter(adaptive filter)
 
 #### [Chapter9](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter9)
-#### Image Segmentation
+##### Image Segmentation
 1. Prewitt filter
 2. Roberts filter
+
+#### [Chapter10](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter10)
+##### Morphological Image Processing
+1. Dilation function
+2. Erosion function
+3. Opening function
+4. Closing function
