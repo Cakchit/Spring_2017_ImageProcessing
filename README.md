@@ -55,3 +55,8 @@
 ##### Image restoration
 1. Median filter(using quick selection algorithm for get median)
 2. Wiener filter(adaptive filter)
+
+#### [Chapter9](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter9)
+#### Image Segmentation
+1. Prewitt filter
+2. Roberts filter
