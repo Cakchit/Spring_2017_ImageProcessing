@@ -1,7 +1,7 @@
-function result = my_erode(im, se)
+function result = my_dilate_gray(im, se)
 
     %
-    % This function returns erosion binary images with structure element.
+    % This function returns dilation grayscale images with structure element.
     %
     % Author : Yoonjae, Cho
     % Email  : yoonjae.cho92@gmail.com
@@ -16,14 +16,13 @@ function result = my_erode(im, se)
     
     pad = zeros(h+pad_h*2, w+pad_w*2);
     result = pad;
+    
     pad(1+pad_h:h+pad_h, 1+pad_w:w+pad_w) = im;
     
     for i = 1+pad_h : h+pad_h
         for j = 1+pad_w : w+pad_w
-            window = result(i-pad_h:i+pad_h, j-pad_w:j+pad_w) & se;
-            if sum(window(:)) == sum(se(:))
-               result(i,j) = 1;
-            end
+            window = pad(i-pad_h:i+pad_h, j-pad_w:j+pad_w) + se;
+            result(i,j) = max(window(:));
         end
     end
     

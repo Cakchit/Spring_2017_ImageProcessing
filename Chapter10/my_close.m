@@ -1,7 +1,7 @@
 function result = my_close(im, se)
 
     %
-    % This function returns closing operation.
+    % This function returns closing operation at binary image.
     % se(structure element) size is 3x3.
     %
     % Author : Yoonjae, Cho
@@ -11,5 +11,4 @@ function result = my_close(im, se)
     
     dilate = my_dilate(im, se);
     result = my_erode(dilate, se);
-    
-    
+end 
