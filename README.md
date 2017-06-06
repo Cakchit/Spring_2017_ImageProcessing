@@ -63,7 +63,8 @@
 
 #### [Chapter10](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter10)
 ##### Morphological Image Processing
-1. Dilation function
-2. Erosion function
-3. Opening function
-4. Closing function
+1. Dilation function(Binary / Grayscale)
+2. Erosion function(Binary / Grayscale)
+3. Opening function(Binary / Grayscale)
+4. Closing function(Binary / Grayscale)
+5. Componenet lableign(Union & Find / DFS)
