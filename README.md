@@ -68,3 +68,9 @@
 3. Opening function(Binary / Grayscale)
 4. Closing function(Binary / Grayscale)
 5. Componenet lableign(Union & Find / DFS)
+
+#### [Chapter13](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter12)
+1. Filtering image with wiener filter at RGB
+2. Filtering image with wiener filter at luminance
+3. Filtering image with median filter at RGB
+4. Filtering image with median filter at luminance
