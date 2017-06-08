@@ -4,10 +4,10 @@
 
 ### Contents
 
-#### [Chapter2](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter2)
+#### [Chapter02](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter02)
 1. Hexademical dump hex funciton
 
-#### [Chapter3](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter3)
+#### [Chapter03](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter03)
 ##### Image display
 1. Imresize funciton
 2. Bit plane function
@@ -17,7 +17,7 @@
 6. Dithering single intensity function
 5. Error diffusion function(using Floyd-Steinberg algorithm)
 
-#### [Chapter4](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter4)
+#### [Chapter04](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter04)
 ##### Pixel wise operation
 1. Image histogram function
 2. Probablity distribution function
@@ -25,7 +25,7 @@
 4. Equalizing image histogram function
 
 
-#### [Chapter5](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter5)
+#### [Chapter05](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter05)
 ##### Region wise operation
 1. Uniform filter function
 2. Gaussian filter function
@@ -38,12 +38,12 @@
 9. Unsharp-masking filter function
 
 
-#### [Chapter6](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter6)
+#### [Chapter06](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter06)
 ##### Geometric transform
 1. Up sampling image function(using nearest, bilinear, bicubic interpolation)
 2. Rotating image function(using nearest, bilinear, bicubic interpolation)
 
-#### [Chapter7](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter7)
+#### [Chapter07](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter07)
 ##### Fourier transform
 1. 1D DFT
 2. 2D Separable DFT
@@ -51,12 +51,12 @@
 4. Showing DFT(log, abs)
 5. Butterworth LPF, HPF
 
-#### [Chapter8](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter8)
+#### [Chapter08](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter08)
 ##### Image restoration
 1. Median filter(using quick selection algorithm for get median)
 2. Wiener filter(adaptive filter)
 
-#### [Chapter9](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter9)
+#### [Chapter09](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter09)
 ##### Image Segmentation
 1. Prewitt filter
 2. Roberts filter
