@@ -74,3 +74,6 @@
 2. Filtering image with wiener filter at luminance
 3. Filtering image with median filter at RGB
 4. Filtering image with median filter at luminance
+
+#### [Chapter14](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter14)
+1. Huffman coding
