@@ -67,7 +67,7 @@
 2. Erosion function(Binary / Grayscale)
 3. Opening function(Binary / Grayscale)
 4. Closing function(Binary / Grayscale)
-5. Componenet lableign(Union & Find / DFS)
+5. Component labeling(Union & Find / DFS)
 
 #### [Chapter13](https://github.com/Yoon-jae/Spring_2017_ImageProcessing/tree/master/Chapter12)
 1. Filtering image with wiener filter at RGB
